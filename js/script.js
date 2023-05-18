@@ -17,13 +17,13 @@ if (button) {
         if (anni < 18 ){
             sconto = prezzo * 0.8
             console.log(sconto)
-            biglietto.innerHTML = `Ciao ${nome} hai diritto ad un biglietto ridotto. Costo del biglietto ${sconto.toFixed(2)} €`
+            biglietto.innerHTML = `Ciao ${nome} hai diritto ad uno sconto del 20%. Costo del biglietto ${sconto.toFixed(2)} €`
             console.log(biglietto)
         }
     //  sconto pensionati
         else if (anni > 65) {
             let sconto_2 = prezzo * 0.6
-            biglietto.innerHTML = `Ciao ${nome} hai diritto ad un biglietto ridotto. Costo del biglietto ${sconto_2.toFixed(2)} €`
+            biglietto.innerHTML = `Ciao ${nome} hai diritto ad uno sconto del 40%. Costo del biglietto ${sconto_2.toFixed(2)} €`
             console.log (sconto_2)
         }
 //    prezzo pieno
