@@ -15,12 +15,27 @@ if (button) {
         if (anni < 18 ){
             sconto = prezzo * 0.8
              console.log(sconto)
-        } else if (anni > 65){
-            sconto= prezzo * 0.6
-            console.log (sconto)
-        } else {
-            sconto= prezzo
+        } 
+    }); 
+}
+
+if (button) {
+    button.addEventListener('click', function() {
+        if (anni > 65){
+            let sconto_2 = prezzo * 0.6
+            console.log (sconto_2)
         }
     }); 
-
 }
+
+if (button) {
+    button.addEventListener('click', function() {
+        if ((anni > 17)  || (anni < 66 ))  {
+            let sconto = prezzo 
+            console.log (sconto)
+
+        }
+    }); 
+}
+
+
