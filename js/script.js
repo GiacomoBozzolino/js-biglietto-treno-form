@@ -9,16 +9,18 @@ console.log(prezzo)
 console.log(kmValue)
 
 
-button.addEventListener('click', function() {
-    console.log('click')
-    if (anni<18 ){
-        sconto = prezzo * 0.8
-            concole.log(sconto)
-    } else if (anni>65){
-        sconto= prezzo * 0.6
-        concole.log (sconto)
-    } else {
-        sconto= prezzo
-    }
-}); 
+if (button) {
+    button.addEventListener('click', function() {
+        console.log('click')
+        if (anni < 18 ){
+            sconto = prezzo * 0.8
+             console.log(sconto)
+        } else if (anni > 65){
+            sconto= prezzo * 0.6
+            console.log (sconto)
+        } else {
+            sconto= prezzo
+        }
+    }); 
 
+}
