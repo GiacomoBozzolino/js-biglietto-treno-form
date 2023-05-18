@@ -1,25 +1,24 @@
 let button = document.getElementById ('price_button')
 let km = document.getElementById ('km')
 let kmValue = km.value
-let prezzo= km * 0.21
-
-
+let prezzo= kmValue * 0.21
+let anni= document.getElementById ('anni').value
+let sconto
+console.log(anni)
+console.log(prezzo)
 console.log(kmValue)
-console.log(eta)
 
-if (button) {
-    button.addEventListener('click', function() {
 
-        if (eta === minorenne ){
-            let eta= document.getElementById(eta).value = eta.options[eta.selectedIndex]
-            let sconto= prezzo *0.8
-             console.log('click')
-             console.log(eta)
-             concole.log (sconto )
-        }
-        
+button.addEventListener('click', function() {
+    console.log('click')
+    if (anni<18 ){
+        sconto = prezzo * 0.8
+            concole.log(sconto)
+    } else if (anni>65){
+        sconto= prezzo * 0.6
+        concole.log (sconto)
+    } else {
+        sconto= prezzo
     }
-     ); 
+}); 
 
-
-}
