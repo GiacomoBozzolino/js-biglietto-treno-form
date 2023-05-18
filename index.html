@@ -10,9 +10,9 @@
 <body>
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <div>
-        <input type="text" id="nome" placeholder="inserisci il tuo nome" value="">
-        <input type="text" id="km" placeholder="km da percorrere" value="">
-        <input type="text" id="anni" placeholder="anni" value="">
+        <input type="text"  class="dati" id="nome" placeholder="inserisci il tuo nome" value="">
+        <input type="text"  class="dati" id="km" placeholder="km da percorrere" value="">
+        <input type="text" class="dati" id="anni" placeholder="anni" value="">
         <!-- <select name="" id="eta">
             <option value="">Maggiorenne</option>
             <option value="">Minorenne</option>
@@ -20,7 +20,7 @@
         </select> -->
     
         <button id="price_button">Calcola</button>
-        <button id="annulla">Cancella</button>
+        <button id="cancella" value= "clear" onclick= "clearInput()">Cancella</button>
     </div>
 
     <div>
