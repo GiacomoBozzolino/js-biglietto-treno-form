@@ -16,7 +16,7 @@
             <div class="col-12 text-center ">
                 <div class="content p-4 bg-white rounded-4 shadow">
                     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-                    <div class="p-2 d-flex justify-content-center">
+                    <div class="p-2 d-flex justify-content-center ">
                         <div class="p-2">
                             <div class="p-2">Nome Cognome</div>
                             <input type="text"  class="dati " id="nome" value="">
@@ -37,7 +37,6 @@
                     <button id="price_button" class="btn btn-light">Calcola</button>
                     <button id="cancella"  class="btn btn-light" type="reset" value="reset" >Annulla</button>
                 </div>
-
             </div>
         </div>
         <div class="row">
@@ -45,6 +44,42 @@
                 <div class="content p-4 bg-white rounded-4 shadow">
                     <h2>IL TUO BIGLIETTO</h2>
                     <h4 id="biglietto"></h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Nome e cognome
+                                </th>
+                                <th>
+                                    Km
+                                </th>
+                                <th>
+                                    Discount
+                                </th>
+                                <th>
+                                    Price
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div id="show-name"></div>
+                                </th>
+                                <th>
+                                    <div id="show-km"></div>
+                                </th>
+                                <th>
+                                    <div id="show-discount"></div>
+                                </th>
+                                <th>
+                                    <div id="show-price"></div>
+                                </th>
+                            </tr>
+
+
+                        </thead>
+
+                    </table>
+        
                 </div>
             </div>
         </div>
